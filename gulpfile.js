@@ -23,14 +23,14 @@ const env = process.env.NODE_ENV;
 
 task('clean', () => {
     console.log(env);
-    return src('dist/**/*', {
+    return src('docs/**/*', {
         read: false
     }).pipe(rm());
 });
 
 task('copy:html', () => {
     return src("src/*.html")
-        .pipe(dest('dist'))
+        .pipe(dest('docs'))
         .pipe(reload({
             stream: true
         }));
@@ -48,7 +48,7 @@ const img = [
 
 task('copy:img', () => {
     return src(img)
-        .pipe(dest('dist'))
+        .pipe(dest('docs'))
         .pipe(reload({
             stream: true
         }));
@@ -74,7 +74,7 @@ task("styles", () => {
         .pipe(gulpif(env === 'prod', gcmq()))
         .pipe(gulpif(env === 'prod', cleanCSS()))
         .pipe(gulpif(env === 'dev', sourcemaps.write()))
-        .pipe(dest('dist'))
+        .pipe(dest('docs'))
         .pipe(reload({
             stream: true
         }));
@@ -87,7 +87,7 @@ task('scripts', () => {
         .pipe(concat('main.js'))
         .pipe(gulpif(env === 'prod', uglify()))
         .pipe(gulpif(env === 'dev', sourcemaps.write()))
-        .pipe(dest('dist'))
+        .pipe(dest('docs'))
         .pipe(reload({
             stream: true
         }));
@@ -97,7 +97,7 @@ task('scripts', () => {
 task('server', () => {
     browserSync.init({
         server: {
-            baseDir: "./dist"
+            baseDir: "./docs"
         }
     });
 });
