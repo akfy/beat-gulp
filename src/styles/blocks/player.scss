@@ -89,7 +89,7 @@
         align-items: center;
         margin-left: 5%;
         margin-right: 3%;
-        background: url(../img/player/play.svg) no-repeat;
+        background: url(./img/player/play.svg) no-repeat;
         background-size: 70%;
         width: 1.25rem;
         height: 1.25rem;
@@ -97,7 +97,7 @@
         cursor: pointer;
        
         &.active{
-            background: url(../img/player/pause.svg) no-repeat;
+            background: url(./img/player/pause.svg) no-repeat;
             background-size: 130%;
         }
 
