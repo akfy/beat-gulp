@@ -1,0 +1,133 @@
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: rem(24px) 0 rem(50px) 0;
+}
+.hero__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3.25rem;
+    text-transform: uppercase;
+    color: #292929;
+    width: 85%;
+    margin-bottom: 1.375rem;
+} 
+
+.hero__subtitle {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.31rem;
+    line-height: 1.56rem;
+    margin-bottom: 2.25rem;
+    width: 80%;
+}
+
+
+.hero__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding: 0 1rem 0 1rem;
+   
+    
+}
+.hero__text-section {
+    width: 50%;
+    height: 50%;
+   
+   
+}
+.hero__image {
+    position: absolute;
+    width: rem(498px);
+    height: rem(498px);
+    
+    
+    background: url(../img/headphones.png) center top rem(1px) no-repeat, #FFFFFF;
+   
+    background-size: 97%;
+    border-radius: 50%;
+    z-index: -100;
+    right:rem(15px);
+    top: rem(-50px);
+  
+}
+
+@include tablets {
+    .hero__container {
+        justify-content: flex-start;
+    }
+    .hero__image {
+        width: rem(323px);
+        height: rem(323px);
+        position: static;
+        right:0;
+        top: 0;
+        margin-bottom: 4rem;
+        flex-shrink: 0;
+        
+    }
+    .hero__content {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        flex: 9;
+      
+        
+    }
+    .hero__title {
+        text-align: center;
+       
+        width: 100%;
+        margin-bottom: rem;
+        
+
+    }
+    .hero__text-section {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+       
+        
+    }
+    .hero__subtitle {
+        width: 70%;
+        text-align: center;
+        padding: 0 rem(40px);
+        margin-bottom: rem(10px);
+    }
+
+}
+@include phones  {
+    .hero__title {
+        font-size: 2rem;
+        line-height: 2.25rem;
+        
+        margin-bottom: 0.87rem;
+    }
+    .hero__subtitle {
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+
+    }
+
+}
+// @media (max-width: 400px) {
+//     .hero__image {
+//         width: rem(290px);
+//         height: rem(290px);
+//     }
+//     .hero__title {
+//         font-size: 1.5rem;
+//         line-height: 1.525rem;
+//     }
+
+// }

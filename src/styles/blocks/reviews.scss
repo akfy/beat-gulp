@@ -1,0 +1,161 @@
+.reviews__container {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.reviews__container>.bx-wrapper {
+    //remove , between both selectors
+    //-----^----- added -
+    background: #f5f5f5;
+    box-shadow: none;
+    border: none;
+}
+
+.main__titile--reviews {
+
+    margin-bottom: rem(74px);
+}
+
+.review {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(57px);
+    align-items: center;
+}
+
+.review__content {
+    width: 60%;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+
+    width: rem(253px);
+    height: rem(264px);
+    margin-right: rem(40px);
+    flex-shrink: 0;
+}
+
+.avatar--team {
+    width: rem(220px);
+    height: rem(290px);
+    margin-right: 0;
+    margin-bottom: rem(25px);
+    flex-shrink: 0;
+}
+
+.avatar__img {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.review__title {
+    font-weight: 700;
+    font-size: rem(24px);
+    line-height: rem(28px);
+    margin-bottom: rem(27px);
+}
+
+.review__content-text {
+    color: #666666;
+    margin-bottom: rem(38px);
+}
+
+
+.review__username {
+    font-weight: 700;
+    font-size: rem(18px);
+    line-height: rem(21px)
+}
+
+.reviews__pager-list {
+    display: flex;
+}
+
+.review__pager-item {
+    margin-right: rem(10px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.review__pager-image {
+    height: rem(74px);
+    width: rem(74px);
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.review__pager-image {
+    border: rem(4px) solid transparent;
+
+    &:hover {
+        border: rem(4px) solid #E01F3D;
+    }
+}
+
+.review__pager-item>.active {
+    .review__pager-image {
+        border: rem(4px) solid #E01F3D;
+    }
+
+
+}
+
+@include tablets {
+    .avatar {
+        width: rem(130px);
+        height: rem(130px);
+        margin-right: 0;
+        margin-bottom: rem(32px);
+    }
+
+    .review {
+        flex-direction: column;
+    }
+
+    .review__content {
+        align-items: center;
+        width: 100%;
+        padding: 0 rem(45px) 0 rem(45px);
+    }
+
+    .review__content-text {
+        text-align: center;
+        padding: 0 rem(5px);
+
+    }
+
+    .review__content-text {
+        margin-bottom: rem(16px);
+    }
+
+    .review__username {
+        font-weight: 400
+    }
+
+    .main__titile--reviews {
+        margin-bottom: rem(89px);
+    }
+
+    .review__title {
+        margin-bottom: rem(10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .review__pager-image {
+        height: rem(64px);
+        width: rem(64px);
+    }
+}

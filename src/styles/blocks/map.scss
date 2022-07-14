@@ -1,0 +1,7 @@
+.map {
+    width: 100vw;
+    height: 95vh;
+    @include phones {
+        height: 90vh;
+    }
+}

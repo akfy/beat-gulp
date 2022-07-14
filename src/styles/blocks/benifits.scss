@@ -1,0 +1,143 @@
+
+.benifits {
+    width: 100%;
+}
+.benifits__list {
+    display: flex;
+    
+    justify-content: center;
+    
+    
+}
+
+.benifints__item {
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+    padding: 0 rem(10px);
+    text-align: center;
+    
+   
+    
+
+    &::after{
+        content: url(../img/separator.svg);
+       
+        position: absolute;
+        width: rem(68px);
+        height: rem(22px);
+        right: 0;
+        top: rem(47px);
+        transform: translateX(50%);
+    }
+
+    &:last-child::after{
+        display: none;
+    }
+    &:first-child {
+        padding-left: 0;
+    }
+    &:last-child{
+       padding-right: 0;
+    }
+}
+
+.benifints__image {
+    display: block;
+    width: rem(56px);
+    height: rem(60px);
+    position: absolute;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    flex-shrink: 0;
+}
+
+.benifits__image-wrapper {
+    display: inline-block;
+    position: relative;
+    width: rem(128px);
+    height: rem(128px);
+    background: #F2F5F4;
+    border-radius: 50%;
+    margin-bottom: rem(24px);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.benifits__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+}
+.benifits__title {
+    font-weight: 700;
+    font-size: rem(24px);
+    line-height: rem(28px);
+    margin-bottom: rem(6px);
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+
+}
+
+.benifits__description {
+    line-height: rem(19px);
+    text-align: center;
+    width: rem(247px);
+    color: #666666;
+    width: 87%;
+    
+}
+@include tablets {
+    .benifints__item::after {
+        display: none;
+       
+    }
+    .benifits__title{
+        margin-bottom: rem(12px);
+    }
+  
+}
+@include phones {
+    
+    .benifits__list {
+        flex-direction: column;
+        padding: 0 1rem 0 0.5rem;
+    }
+    .benifints__item {
+        
+        flex-direction: row;
+       
+        align-items:center;
+        margin-bottom: rem(48px);
+        padding: 0;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .benifits__title{
+        text-align: left;
+        white-space: normal;
+        
+    }
+    .benifits__description {
+        text-align: left;
+        width: auto;
+        
+    }
+  
+    .benifits__image-wrapper {
+        margin-bottom: 0;
+        margin-right: 0.75rem;
+    }
+
+}

@@ -1,0 +1,33 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333537;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+}
+.modal__container{
+  width: rem(309px);
+  height: rem(176px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+
+}
+.modal__content{
+  font-weight: 400;
+  font-size: rem(18px);
+  line-height: rem(24px);
+  text-align: center;
+  margin-bottom: rem(18px);
+
+}
+.error-modal {
+  color: red;
+}

@@ -1,0 +1,25 @@
+.delivery__container {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    height: 100%;
+    background-size: 93%;
+   
+}
+.delivery {
+   
+    background: url(../img/bg.png)  center bottom no-repeat, #161616;
+    background-size: 80%;
+}
+.main__title--delivery {
+    
+    margin-bottom: rem(61px);
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+}
+.delivery {
+ 
+color:#FFFFFF;
+}

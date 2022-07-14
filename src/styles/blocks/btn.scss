@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    background: #E01F3D;
+    color: #ffffff;
+    padding: rem(15px) rem(41px);
+    border-radius: rem(100px);
+    font-weight: 700;
+    text-decoration: none;
+    
+    text-transform: uppercase;
+   
+}
+ .offer__buy > .btn--buy  {
+    padding: rem(21px) rem(41px);
+    @include phones {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .btn {
+        padding-top: rem(20px);
+    }
+}
+@media (max-width: 480px) {
+    .btn {
+        font-size: 1.1875rem;
+        padding-left: rem(36px);
+        padding-right: rem(36px);
+    }
+}

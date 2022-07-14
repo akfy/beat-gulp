@@ -1,0 +1,41 @@
+.pros__lits {
+    display: flex;
+   
+}
+.pros__item {
+    display: flex;
+    margin-right: rem(22px);
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.pros {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+}
+.pros__description {
+    width: rem(100px);
+    line-height: rem(18px);
+}
+.pros__image {
+    margin-right: rem(11px);
+    width: rem(41px);
+    height: rem(41px);
+  
+}
+.pros {
+    @include tablets {
+        display: none;
+    }
+}
+// @media (max-width: 889px) {
+//     .pros {
+//         justify-content: center;
+//     }
+// }
+// @media (max-width: 768px) {
+//     .pros {
+//         display: none;
+//     }
+// }

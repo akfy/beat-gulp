@@ -1,0 +1,27 @@
+.fullscrean-menu {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background: #333537;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.close {
+  position: absolute;
+  top: rem(42px);
+  right: rem(42px);
+ 
+  
+}
+.close__icon {
+  width: rem(20px);
+  height: rem(20px);
+  fill: #FFFFFF;
+}
