@@ -154,7 +154,7 @@
     opacity: 0;
 
     &:checked+.form__item__label--checkbox::before {
-        background: url(../img/checkmark.svg) center no-repeat, #ffffff;
+        background: url(./img/checkmark.svg) center no-repeat, #ffffff;
 
     }
 }

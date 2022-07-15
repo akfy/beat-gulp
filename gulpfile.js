@@ -40,6 +40,7 @@ const img = [
     'src/**/**/*.png',
     'src/**/marker.svg',
     'src/**/player/**.svg',
+    'src/**/checkmark.svg',
     'src/**/sprite.svg'
 ];
 
